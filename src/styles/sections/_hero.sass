@@ -1,0 +1,28 @@
+.hero
+    background-image: url(../images/farFarAway.webp)
+    background-repeat: no repeat
+    background-size: cover
+    position: relative
+    margin-top: -70px
+    padding: 70px 5.6vw 0
+    min-height: 90vh
+
+    &__content
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        &__image
+            max-width: 360px
+            width: 100%
+
+    &::before
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        opacity: .7
+        background-color: #000
+        content: ""

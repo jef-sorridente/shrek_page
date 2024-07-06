@@ -1,0 +1,16 @@
+
+@use "./config/reset"
+
+@use "./components/buttons"
+@use "./sections/header"
+@use "./sections/hero"
+
+body
+    background-color: #523213
+
+@mixin title($fontSize: 40px)
+    font-size: &$fontSize
+    line-height: $fontSize + 10px
+
+.title
+    @include title()
