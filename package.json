@@ -2,7 +2,6 @@
   "name": "exercicio-21.05-landing",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "parcel build src/index.html",
     "dev": "parcel src/index.html src/styles/main.sass src/scripts/main.js",
