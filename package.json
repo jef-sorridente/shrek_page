@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "parcel build src/index.html",
-    "dev": "parcel index.html src/styles/main.sass src/scripts/main.js",
+    "dev": "parcel src/index.html src/styles/main.sass src/scripts/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,6 +15,7 @@
     "parcel": "^2.12.0"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.12.0"
+    "@parcel/transformer-sass": "^2.12.0",
+    "sharp": "^0.31.3"
   }
 }
