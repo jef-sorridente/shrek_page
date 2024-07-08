@@ -1,4 +1,7 @@
+@use "../config/mixins"
+
 .header
+    @include mixins.containerSizeAndPadding()
     display: flex
     justify-content: space-between
     align-items: center
@@ -6,6 +9,10 @@
     height: 70px
     position: relative
     z-index: 1
+
+    @media (max-width:768px)
+        flex-direction: column
+        padding: 0
 
     &__logo
         width: 150px

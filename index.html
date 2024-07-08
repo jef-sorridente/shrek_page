@@ -12,32 +12,129 @@
         <img class="header__logo" src="src/images/logo.webp" alt="shrek" />
       </h1>
       <ul class="header__list">
-        <li class="header__list__item button">Sobre</li>
-        <li class="header__list__item button">Filmes</li>
+        <li class="header__list__item button"><a href="#sobre">Sobre</a></li>
+        <li class="header__list__item button"><a href="#filmes">Filmes</a></li>
+        <li class="header__list__item button">
+          <a href="#personagens">Personagens</a>
+        </li>
       </ul>
     </header>
     <section class="hero">
       <div class="hero__content">
-        <h3 class="title">O ogro mais querido dos filmes!</h3>
+        <h2 class="title--big">O ogro mais querido dos filmes!</h2>
         <img
           class="hero__content__image"
-          src="src/images/shrek.webp"
+          src="src/images/shrek.png"
           alt="Shrek"
         />
       </div>
     </section>
-    <section class="about">
-      <div class="about_content">
-        <h3>Um ogro simpático?</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto vero
-          esse expedita sapiente non accusantium eveniet, ipsa ipsam aut
-          doloribus ut incidunt deserunt nam pariatur velit! Nulla in
-          perferendis ab?
-        </p>
+    <section class="about" id="sobre">
+      <div class="about__content">
+        <div class="about__content__urro">
+          <img src="src/images/fazUrro2.png" alt="faz Urroo" />
+          <span class="title--small">"Faz Uroooooooo!!!"</span>
+        </div>
+        <div>
+          <h2 class="title">Um ogro simpático?</h2>
+          <p class="text">
+            Shrek é considerado simpático e cativante por várias razões.
+            Primeiro, ele desafia os estereótipos de ogros ao ser engraçado,
+            corajoso e leal. Além disso, sua jornada para salvar a Princesa
+            Fiona e recuperar seu pântano é encantadora e irreverente.
+          </p>
+        </div>
       </div>
-      <img src="src/images/urro.png" alt="faz Urroo" />
-      <span>"Faz Uroooooooo!!!"</span>
+    </section>
+    <section class="movies" id="filmes">
+      <h2 class="title">Filmes</h2>
+      <div class="movies__list">
+        <div>
+          <div class="movies__list__item">
+            <h3 class="text">Shrek (2001)</h3>
+            <img src="./src/images/Shrek1.png" alt="Shrek 1" />
+            <button class="button" data-about-movie>Mais sobre o filme</button>
+            <p class="movies__list__item__about text--small">
+              O filme que deu início a tudo! Shrek, incessantemente importunado
+              por criaturas de contos de fadas e soldados do reino, é enviado em
+              uma missão para salvar a Princesa Fiona.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="movies__list__item">
+            <h3 class="text">Shrek 2 (2004)</h3>
+            <img src="./src/images/Shrek2.png" alt="Shrek 2" />
+            <button class="button" data-about-movie>Mais sobre o filme</button>
+            <p class="movies__list__item__about text--small">
+              Shrek e Fiona viajam para fora de sua zona de conforto após serem
+              convocados para o reino de Tão Tão Distante por seus pais.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="movies__list__item">
+            <h3 class="text">Shrek Terceiro (2007)</h3>
+            <img src="./src/images/Shrek3.png" alt="Shrek o Terceiro" />
+            <button class="button" data-about-movie>Mais sobre o filme</button>
+            <p class="movies__list__item__about text--small">
+              Neste filme, Shrek enfrenta o desafio de se tornar rei após a
+              morte do sogro.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="movies__list__item">
+            <h3 class="text">Shrek Para Sempre (2010)</h3>
+            <img src="./src/images/Shrek4.png" alt="Shrek para sempre" />
+            <button class="button" data-about-movie>Mais sobre o filme</button>
+            <p class="movies__list__item__about text--small">
+              Shrek faz um acordo com o traiçoeiro Rumpelstiltskin e se vê em
+              uma realidade alternativa onde ele nunca existiu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="characters" id="personagens">
+      <h2 class="title">Principais Pesonagens</h2>
+      <div class="characters__container">
+        <div class="characters__container__item">
+          <img src="./src/images/fiona.webp" alt="Princesa Fiona" />
+          <div class="characters__container__item__content">
+            <h4 class="text--big">Princesa Fiona</h4>
+            <p>
+              Sua história começa com um encanto mágico: durante o dia, ela
+              parece ser uma princesa comum, mas à noite, ela se transforma em
+              uma ogra devido a uma maldição. Mantida em isolamento em uma torre
+              distante, Fiona espera pelo príncipe encantado que a libertará.
+            </p>
+          </div>
+        </div>
+        <div class="characters__container__item">
+          <img src="./src/images/burro.png" alt="Burro" />
+          <div class="characters__container__item__content">
+            <h4 class="text--big">Burro</h4>
+            <p>
+              O Burro adora cantar e conversar, o que muitas vezes irrita os
+              outros com sua tagarelice. No entanto, ele tem um bom coração, é
+              leal aos amigos e ama sua esposa e filhos. Além disso, ele tem uma
+              paixão por doces, como parfaits, bolos e waffles.
+            </p>
+          </div>
+        </div>
+        <div class="characters__container__item">
+          <img src="./src/images/gato.png" alt="Gato de Botas" />
+          <div class="characters__container__item__content">
+            <h4 class="text--big">Gato de Botas</h4>
+            <p>
+              O Gato de Botas é um feroz herói felino conhecido por suas botas
+              lendárias. Ele é um lutador corajoso, um espadachim habilidoso e
+              um dançarino louco.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <script src="./src/scripts/main.js"></script>
   </body>

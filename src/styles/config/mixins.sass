@@ -1,0 +1,13 @@
+@mixin title($fontSize: 56px)
+    font-size: $fontSize
+    line-height: $fontSize + 10px
+
+@mixin text($fontSize: 20px)
+    font-size: $fontSize
+    line-height: $fontSize + 10px
+
+@mixin containerSizeAndPadding()
+    padding: 150px 10vw
+
+    @media (max-width:768px)
+        padding: 50px 10vw

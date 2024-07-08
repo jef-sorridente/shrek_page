@@ -1,16 +1,39 @@
 
 @use "./config/reset"
+@use "./config/colors"
+@use "./config/mixins"
 
 @use "./components/buttons"
 @use "./sections/header"
 @use "./sections/hero"
+@use "./sections/about"
+@use "./sections/movies"
+@use "./sections/characters"
 
 body
-    background-color: #523213
-
-@mixin title($fontSize: 40px)
-    font-size: &$fontSize
-    line-height: $fontSize + 10px
+    background-color: colors.$backgroundColor1
+    color: colors.$textColor1
 
 .title
-    @include title()
+    @include mixins.title()
+    @media (max-width:768px)
+        @include mixins.title(46)
+
+.title--big
+    @include mixins.title(100px)
+    @media (max-width:1024px)
+        @include mixins.title(80px)
+    @media (max-width:768px)
+        @include mixins.title(50px)
+
+.title--small
+    @include mixins.title(44px)
+
+.text
+    @include mixins.text()
+
+.text--big
+    @include mixins.text(28px)
+
+.text--small
+    @include mixins.text(18px)

@@ -1,0 +1,53 @@
+@use "../config/mixins"
+
+.about
+    @include mixins.containerSizeAndPadding()
+
+    &__content
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        @media (max-width:768px)
+            flex-direction: column
+
+        div
+            width: 50%
+
+            @media (max-width:768px)
+                width: 100%
+
+        &__urro
+            display: flex
+            flex-direction: column
+            align-items: center
+
+            @media (max-width:768px)
+                margin-bottom: 32px
+
+            img
+                width: 360px
+                animation: shake 1s infinite alternate steps(3, end)
+
+                @media (max-width:768px)
+                    width: 260px
+
+            span
+                font-weight: bold
+                text-transform: uppercase
+                animation: shakeText 1s infinite alternate steps(3, end)
+
+                @media (max-width:768px)
+                    font-size: 28px
+
+@keyframes shake
+    0%
+        transform: rotate(-15deg)
+    100%
+        transform: rotate(15deg)
+
+@keyframes shakeText
+    0%
+        transform: rotate(-5deg)
+    100%
+        transform: rotate(5deg)
